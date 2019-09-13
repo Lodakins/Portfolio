@@ -38,6 +38,93 @@
   background: #b3d4fc;
   text-shadow: none;
 }
+
+/*=========== STYLING PROGRESS BAR ============*/
+.progress-bar {
+  background-color: whiteSmoke;
+  border-radius: 2px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.25) inset;
+
+  width: 250px;
+  height: 20px;
+  
+  position: relative;
+  display: block;
+}
+  
+.progress-bar > span {
+  background-color: blue;
+  border-radius: 2px;
+
+  display: block;
+  text-indent: -9999px;
+}
+
+progress{
+  width: 100%;
+}
+progress[value]{
+    height: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border: none;
+
+    /* for IE 10*/
+    color: blue;
+  }
+progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-moz-progress-bar { 
+    background-image:
+      -moz-linear-gradient(
+        135deg, 
+        transparent 33%, 
+        rgba(0, 0, 0, 0.1) 33%, 
+        rgba(0, 0, 0, 0.1) 66%, 
+        transparent 66% 
+      ),
+      -moz-linear-gradient(
+        top, 
+        rgba(255, 255, 255, 0.25), 
+        rgba(0, 0, 0, 0.25)
+      ),
+      -moz-linear-gradient(
+        left, 
+        #09c, 
+        #f44
+      );
+  
+    border-radius: 2px; 
+    background-size: 35px 20px, 100% 100%, 100% 100%; 
+}
+progress[value]::-webkit-progress-value {
+    background-image:
+       -webkit-linear-gradient(-45deg, 
+                               transparent 33%, rgba(0, 0, 0, .1) 33%, 
+                               rgba(0,0, 0, .1) 66%, transparent 66%),
+       -webkit-linear-gradient(top, 
+                               rgba(255, 255, 255, .25), 
+                               rgba(0, 0, 0, .25)),
+       -webkit-linear-gradient(left, #09c, #f44);
+  
+      border-radius: 2px; 
+      background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+@-webkit-keyframes animate-stripes {
+    100% { background-position: -100px 0px; }
+}
+ 
+@keyframes animate-stripes {
+    100% { background-position: -100px 0px; }
+}
+/*========= PROGRESS BAR STYLING  END HERE =========*/
+
+
 h1,h2,h3,h4{
   color: hsl(192, 100%, 9%);
   font-size: 1.4em;
@@ -205,7 +292,7 @@ a.class-brand{
   padding-left: 0px;
   padding-right: 0px;
 }
-.resume-header a,li{
+.resume-header a, .resume-header li{
   color: #fff;
 }
 .resume-header img{
@@ -246,7 +333,6 @@ padding-left: 150px;
   font-weight: 900;
   font-size: 0.94em;
   color:hsl(192, 100%, 9%);
-  color: #B83227;
 }
 .resume-skill hr{
   border: none;
@@ -255,9 +341,7 @@ padding-left: 150px;
   margin-top: 7px;
  
 }
-progress{
-width: 100%;
-}
+
 .resume-skill .skill-container{
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
   background-color: hsl(214, 64%, 98%);
@@ -271,11 +355,109 @@ width: 100%;
 }
 .work-experience{
   padding-top: 20px;
+  margin-top: 30px;
+}
+.work-experience hr{
+  border: none;
+  width: 20%;
+  border-bottom: 5px solid #B83227;
+  margin-top: 7px;
+ 
+}
+.work-experience-main{
+  margin-top:10px;
 }
 .experience-one h3{
     font-size: 0.9em;
 }
+.work-experience-header div{
+  float:left;
+}
+.work-experience h3{
+  font-size: 1.1em;
+}
+.work-experience h3 span{
+  font-size: 0.9em;
+}
+.work-experience-header .company-name{
+  margin-left: 50%;
+}
+.work-experience-body{
+  clear: both;
+  margin-top: 60px;
+}
+.work-experience-body h4{
+  font-size: 1.1em;
+}
+.work-experience-body li{
+  list-style-type: disc;
+}
+.strength{
+  margin-top: 20px;
+}
+.strength hr{
+  border: none;
+  width: 14%;
+  border-bottom: 5px solid #B83227;
+  margin-top: 7px;
+ 
+}
+.education{
+  margin-top: 40px;
+}
+.education hr{
+  border: none;
+  width: 14%;
+  border-bottom: 5px solid #B83227;
+  margin-top: 7px;
+ 
+}
+.education-main{
+  margin-top:10px;
+}
+.experience-one h3{
+    font-size: 0.9em;
+}
+.education-header div{
+  float:left;
+}
+.education-header h3{
+  font-size: 1.1em;
+}
+.education-header h3 span{
+  font-size: 0.9em;
+}
+.education-header .company-name{
+  margin-left: 50%;
+}
+.education-body{
+  clear: both;
+  margin-top: 60px;
+}
+.interest{
+  margin-top: 20px;
+}
+.interest hr{
+  border: none;
+  width: 14%;
+  border-bottom: 5px solid #B83227;
+  margin-top: 7px;
+ 
+}
 
+.resume-footer{
+  margin-top: 100px;
+  background-color: #B83227;
+  color: #fff;
+  padding: 10px; 
+}
+.interest ul li{
+  list-style-type: disc;
+  display: inline-block;
+  margin-right: 20%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
 
 
 /* ==========================================================================
@@ -392,7 +574,27 @@ width: 100%;
       width:190px;
       height:190px;
     }
-
+    .resume-career-obj hr{
+      border: none;
+      width: 30%;
+      border-bottom: 5px solid #B83227;
+      margin-top: 7px;
+    }
+    .resume-skill hr{
+      border: none;
+      width: 30%;
+      border-bottom: 5px solid #B83227;
+      margin-top: 7px;
+    }
+    .work-experience hr{
+      border: none;
+      width: 30%;
+      border-bottom: 5px solid #B83227;
+      margin-top: 7px;
+    }
+    .resume-skill .skill-container{
+     max-width: 600px;
+    }
      
 }
 
@@ -426,6 +628,43 @@ width: 100%;
       border-radius: 10px;
       width:180px;
       height:180px;
+}
+
+.resume-career-obj hr{
+  border: none;
+  width: 39%;
+  border-bottom: 5px solid #B83227;
+  margin-top: 7px;
+}
+.resume-skill hr{
+  border: none;
+  width: 39%;
+  border-bottom: 5px solid #B83227;
+  margin-top: 7px;
+}
+.work-experience hr{
+  border: none;
+  width: 34%;
+  border-bottom: 5px solid #B83227;
+  margin-top: 7px;
+}
+.strength hr{
+  border: none;
+  width: 30%;
+  border-bottom: 5px solid #B83227;
+  margin-top: 7px;
+}
+.education hr{
+  border: none;
+  width: 30%;
+  border-bottom: 5px solid #B83227;
+  margin-top: 7px;
+}
+.interest hr{
+  border: none;
+  width: 27%;
+  border-bottom: 5px solid #B83227;
+  margin-top: 7px;
 }
 
 

@@ -87,11 +87,15 @@
           <hr>
 
           <div class="row">
-          <div class="col-md-4 skill-container">
+            <div class="col-md-12 col-lg-4 skill-container">
           <ul>
             <li>
               <span class="skill-title">HTML</span><br>
-              <progress value="1"></progress>
+              <progress value="100" max="100">
+                <div class="progress-bar">
+                  <span style="width: 80%;">Progress: 80%</span>
+              </div>
+              </progress>
             </li>
             <li>
                 <span class="skill-title">CSS</span><br>
@@ -106,9 +110,9 @@
                     <progress value="0.6"></progress>
                   </li>
           </ul>
-        </div>
+            </div>
 
-        <div class="col-md-4 skill-container">
+            <div class="col-md-12 col-lg-4 skill-container">
             <ul>
               <li>
                 <span class="skill-title">NodeJS/Expres</span><br>
@@ -127,9 +131,9 @@
                       <progress value="0.5"></progress>
                     </li>
             </ul>
-          </div>
+            </div>
 
-          <div class="col-md-4 skill-container">
+            <div class="col-md-12 col-lg-4 skill-container">
               <ul>
                 <li>
                   <span class="skill-title">JQuery</span><br>
@@ -150,27 +154,131 @@
               </ul>
             </div>
 
-      </div>
+          </div>
         </section>
 
         <section class="col-12 work-experience">
           <h2> Work Experience</h2> 
           <hr>
 
-        <article class="experience-one">
-          <header>
-            <h3> Mobile Web Specialist<br>
-              <span>  May 2019 - Present</span>
-            </h3>
-            <h3> AndelaWithGoogle</h3>
-          </header>
-          <p> </p>
+          <div class="row">
+          <div class="col-12 work-experience-main">
+            <header class="work-experience-header">
+              <div>
+                  <h3>Mobile Web Specialist<br>
+                    <span>June 2019 - Present</span>
+                    </h3>
+              </div>
+             <div class="company-name">
+                <strong> AndelaWithGoogle Scholarship</strong>
+             </div>
+            </header>
 
-          <h4> Responsibilities</h4>
+           <div class="work-experience-body">
+              <h4> Responsibilities</h4>
+              <ul>
+                <li>  Working with HTML, CSS and Javascript to develop dynaminc web application</li>
+                <li> Learning web accessibility and semantics.</li>
+                <li>  Developing Progressive Web Applications</li>
+              </ul>
+           </div>
+
+          </div>
+
+          <div class="col-12 work-experience-main">
+              <header class="work-experience-header">
+                <div>
+                    <h3> Web Designer (Internship) <br>
+                      <span>June 2018 - May 2019</span>
+                      </h3>
+                </div>
+               <div class="company-name">
+                  <strong> Nerdyeye </strong>
+               </div>
+              </header>
+  
+             <div class="work-experience-body">
+                <h4> Responsibilities</h4>
+                <ul>
+                  <li>  Working with team on design and maintenance of new and existing websites.</li>
+                  <li> Designing landing pages and also email addresses.</li>
+                  <li>  Designing responsive cross-plattform websites</li>
+                  <li> Maintain and add features to existing websites</li>
+                </ul>
+             </div>
+  
+            </div>
+          </div>
+          
+        </section>
+
+        <section class=" col-12 strength"> 
+          <h2> Strengths</h2>
+          <hr>
+          <div class="row">
+            <div class="col-12 col-md-6"> <i class="fas fa-check"></i> Team Collaboration </div>
+            <div class="col-12 col-md-6"> <i class="fas fa-check"></i> Write clean, readable and maintable code. </div>
+            <div class="col-12 col-md-6"> <i class="fas fa-check"></i> Good communication skills </div>
+            <div class="col-12 col-md-6"> <i class="fas fa-check"></i> Follow best practices and standards </div>
+            <div class="col-12 col-md-6"> <i class="fas fa-check"></i> Quick to learn and adapt </div>
+            <div class="col-12 col-md-6"> <i class="fas fa-check"></i> Good problem solving skills </div>
+          </div>
+        </section>
+
+        <section class="col-12 education">
+          <h2> Education</h2>
+          <hr>
+          <div class="row">
+              <div class="education-main">
+                  <header class="education-header">
+                    <div>
+                        <h3> Software Developer<br>
+                          <span>October 2017 - Present</span>
+                          </h3>
+                    </div>
+                   <div class="company-name">
+                      <strong> Edx, Udacity, PluralSight, Microsoft Academy</strong>
+                   </div>
+                  </header>
+      
+                 <div class="education-body">
+                    <p> Learnt software development from various platform and still learning to be updated with current software and web technologies and best practices.</p>
+                 </div>
+      
+                </div>
+          </div>
+
+          <div class="education-main">
+              <header class="education-header">
+                <div>
+                    <h3> Industrial Mathematics<br>
+                      <span> August, 2011 - August, 2016. </span>
+                      </h3>
+                </div>
+               <div class="company-name">
+                  <strong> The Federal University of Technology, Akure. </strong>
+               </div>
+              </header>
+  
+             <div class="education-body">
+                <p> Major in Mathematics and its application, and minor in computer sciences.</p>
+             </div>
+  
+            </div>
+
+          </section>
+      </div>
+
+        
+
+        <section class="col-12 interest">
+          <h2> Interest </h2>
+          <hr>
           <ul>
-            <li> </li>
+            <li> Networking </li>
+            <li> Gaming </li>
+            <li> Drumming </li>
           </ul>
-        </article>
         </section>
 
       </div>
@@ -179,6 +287,12 @@
   </div>
 
 
+
+<footer class="container-fluid resume-footer">
+  <div class="row">
+      <p class="col-12 text-center" style="color: #fff;"> &copy; Copyright Akinrolabu Lolade.</p>
+  </div>
+</footer>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
